@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHADOW OPS | Intelligence Agency</title>
+    <meta name="description"
+        content="Official website for Shadow Ops Intelligence Agency. We operate in the shadows, protecting the world from global threats.">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Shadow Ops Logo">
+            <span>SHADOW OPS</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hero">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#operations">OPERATIONS</a></li>
+                <li><a href="#agents">AGENTS</a></li>
+                <li><a href="#hub">HUB</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="auth-btns">
+            <a href="#" class="btn btn-small" id="loginBtn">AGENT LOGIN</a>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <span class="neon-text section-tag">SECURE NETWORK: ACTIVE</span>
+                <h1 class="typing-text">Operating in the Shadows. Protecting the World.</h1>
+                <p class="hero-subtitle">Shadow Ops Intelligence is a global tier-one surveillance and
+                    counter-intelligence agency dedicated to maintaining international stability.</p>
+                <div class="hero-actions">
+                    <a href="#operations" class="btn">Access Intelligence</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-value" data-target="150">0</span>
+                        <span class="stat-label">OPERATIONS COMPLETED</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" data-target="48">0</span>
+                        <span class="stat-label">ELITE ASSETS</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" data-target="12">0</span>
+                        <span class="stat-label">GLOBAL HUBS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-tag">// MISSION STATEMENT</span>
+                    <h2 class="section-title">Silent Guardians of <br><span class="neon-text">Digital Sovereignty</span>
+                    </h2>
+                    <p>Established in 2012, Shadow Ops Intelligence fills the gap between traditional diplomacy and
+                        covert action. We monitor the dark corners of the web and the physical world to neutralize
+                        threats before they materialize.</p>
+
+                    <div class="mission-cards">
+                        <div class="mission-card">
+                            <i class="fa-solid fa-shield-halved neon-text"></i>
+                            <h4>Integrity</h4>
+                            <p>Upholding ethics even in the dark.</p>
+                        </div>
+                        <div class="mission-card">
+                            <i class="fa-solid fa-eye-slash neon-text"></i>
+                            <h4>Invisibility</h4>
+                            <p>We leave no trace, physical or digital.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <img src="assets/logo.png" alt="Shadow Ops Visual"
+                        style="width: 100%; max-width: 400px; display: block; margin: auto; filter: drop-shadow(0 0 30px var(--neon-green-dim));">
+                </div>
+            </div>
+        </section>
+
+        <!-- Operations Section -->
+        <section id="operations">
+            <span class="section-tag center">// CORE CAPABILITIES</span>
+            <h2 class="section-title center">Strategic Operations</h2>
+            <div class="operations-grid">
+                <div class="op-card">
+                    <div class="op-icon"><i class="fa-solid fa-network-wired neon-text"></i></div>
+                    <h3>Cyber Surveillance</h3>
+                    <p>Global real-time monitoring of encrypted communications and emerging digital threats.</p>
+                </div>
+                <div class="op-card">
+                    <div class="op-icon"><i class="fa-solid fa-mask neon-text"></i></div>
+                    <h3>Counter-Intelligence</h3>
+                    <p>Identifying and neutralizing foreign espionage attempts and insider threats.</p>
+                </div>
+                <div class="op-card">
+                    <div class="op-icon"><i class="fa-solid fa-user-secret neon-text"></i></div>
+                    <h3>Covert Reconnaissance</h3>
+                    <p>Small-team deployments in high-risk environments to gather high-value intelligence.</p>
+                </div>
+                <div class="op-card">
+                    <div class="op-icon"><i class="fa-solid fa-terminal neon-text"></i></div>
+                    <h3>Digital Forensics</h3>
+                    <p>Deep-layer investigation of cyber-attacks to trace back to original source actors.</p>
+                </div>
+            </div>
+
+            <div id="map-container">
+                <div class="radar-sweep"></div>
+                <!-- Map Pips Injected via JS -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_blank_without_borders.svg"
+                    alt="World Map" style="width: 100%; height: 100%; opacity: 0.1; object-fit: cover;">
+            </div>
+        </section>
+
+        <!-- Agents Section -->
+        <section id="agents">
+            <span class="section-tag">// ACTIVE ASSETS</span>
+            <h2 class="section-title">Meet the Elite</h2>
+            <div class="agents-grid">
+                <div class="agent-card">
+                    <img src="assets/agents/ghost.png" alt="Agent Ghost" class="agent-img">
+                    <div class="agent-info">
+                        <div class="agent-code">CODE: GHOST</div>
+                        <p>Specializes in extreme low-profile digital infiltration and system compromise.</p>
+                        <div class="agent-stats">
+                            <span>SKILL 98%</span>
+                            <span>MISSIONS: 42</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <img src="assets/agents/falcon.png" alt="Agent Falcon" class="agent-img">
+                    <div class="agent-info">
+                        <div class="agent-code">CODE: FALCON</div>
+                        <p>Tier-1 signals intelligence and high-altitude surveillance expert.</p>
+                        <div class="agent-stats">
+                            <span>SKILL 96%</span>
+                            <span>MISSIONS: 35</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <img src="assets/agents/viper.png" alt="Agent Viper" class="agent-img">
+                    <div class="agent-info">
+                        <div class="agent-code">CODE: VIPER</div>
+                        <p>Tactical extraction specialist and hand-to-hand neutralization expert.</p>
+                        <div class="agent-stats">
+                            <span>SKILL 99%</span>
+                            <span>MISSIONS: 28</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Intelligence Hub -->
+        <section id="hub">
+            <span class="section-tag">// INTELLIGENCE HUB</span>
+            <h2 class="section-title">Declassified Briefings</h2>
+            <div class="hub-grid">
+                <div class="articles">
+                    <div class="classified-article">
+                        <span class="classified-tag">TS: SCI</span>
+                        <h3>Analysis of the "Xpsilon" Data Breach</h3>
+                        <p>A detailed investigation into the recent breach of global financial networks attributed to
+                            state-sponsored actors.</p>
+                        <a href="#" class="neon-text">READ MORE ></a>
+                    </div>
+                    <div class="classified-article">
+                        <span class="classified-tag">CONFIDENTIAL</span>
+                        <h3>Neural Network Vulnerabilities discovered</h3>
+                        <p>Intelligence reports suggest a new class of attacks targeting AI governance models at the
+                            hardware layer.</p>
+                        <a href="#" class="neon-text">READ MORE ></a>
+                    </div>
+                </div>
+                <div class="hub-sidebar">
+                    <div class="mission-card" style="border: 1px solid var(--neon-green)">
+                        <h4 class="neon-text">ALERT STATUS</h4>
+                        <div style="font-size: 2rem; color: var(--neon-green); margin: 1rem 0;">LEVEL 3</div>
+                        <p>Moderate threat level across global sectors. Increased vigilance required.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <span class="section-tag center">// SECURE CHANNEL</span>
+            <h2 class="section-title center">Contact Command</h2>
+            <div class="contact-container">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label>ENCRYPTION KEY (ID)</label>
+                        <input type="text" placeholder="SHADOW-XXXX-XXXX">
+                    </div>
+                    <div class="form-group">
+                        <label>MESSAGE SUBJECT</label>
+                        <input type="text" placeholder="Mission Briefing / Urgent Alert">
+                    </div>
+                    <div class="form-group">
+                        <label>SECURE PAYLOAD</label>
+                        <textarea rows="5" placeholder="Encrypt your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">SEND SECURE MESSAGE</button>
+                    <p style="font-size: 0.7rem; margin-top: 1rem; color: var(--text-secondary); text-align: center;">
+                        This connection is routed through multiple onion layers. Do not include identifiable
+                        information.</p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Restricted Area Dashboard -->
+        <section id="restricted-area">
+            <div class="dashboard-header">
+                <div>
+                    <span class="neon-text">// AUTHORIZED ACCESS ONLY</span>
+                    <h2 class="section-title">Command Dashboard</h2>
+                </div>
+                <div class="btn" onclick="window.location.reload()">TERMINATE SESSION</div>
+            </div>
+
+            <div class="hub-grid">
+                <div class="feed-container">
+                    <h4 style="margin-bottom: 1rem;">LIVE GLOBAL FEED</h4>
+                    <div class="feed-grid">
+                        <!-- JS Injected Feed -->
+                    </div>
+                </div>
+                <div class="asset-tracking">
+                    <h4 style="margin-bottom: 1rem;">ASSET TRACKING</h4>
+                    <div class="mission-control">
+                        <div class="grid-overlay"></div>
+                        <div class="coordinate-display">
+                            <span>LAT: <span id="lat-val">51.5074</span></span>
+                            <span>LON: <span id="lon-val">-0.1278</span></span>
+                        </div>
+                        <div class="mission-card"
+                            style="border-color: var(--neon-green); position: relative; z-index: 1;">
+                            <span class="neon-text">GHOST</span> - INFILTRATING NODE 7<br>
+                            <span class="neon-text">FALCON</span> - ORBITAL RECON ACTIVE<br>
+                            <span class="neon-text">VIPER</span> - STANDBY FOR EXTRACTION
+                        </div>
+                    </div>
+
+                    <h4 style="margin-top: 2rem; margin-bottom: 1rem;">GENERATE NEW MISSION</h4>
+                    <div class="mission-card" style="border-color: #ff3914;">
+                        <p style="font-size: 0.8rem; margin-bottom: 1rem;">Authorized Assets Only. Tactical
+                            Authorization required.</p>
+                        <button class="btn btn-small" id="genMissionBtn"
+                            style="width: 100%; font-size: 0.7rem;">GENERATE DOSSIER</button>
+                        <div id="missionResult" class="generated-dossier" style="display: none;">
+                            <!-- JS Injected Dossier -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secure-inbox">
+                <h4 style="margin-bottom: 1rem;">SECURE DARK LINK INBOX</h4>
+                <div id="inbox-list">
+                    <div class="message-item">
+                        <div class="message-meta">
+                            <span>FROM: COMMAND-CENTRAL</span>
+                            <span>2026-03-06 13:45</span>
+                        </div>
+                        <div class="encrypting-text" data-cipher="KHW74X-L9P2-Q91Z">KHW74X-L9P2-Q91Z</div>
+                        <button class="decrypt-btn">DECRYPT</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer
+        style="padding: 4rem 10%; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; background: var(--navy-dark);">
+        <div class="footer-logo logo">
+            <img src="assets/logo.png" alt="Logo">
+            <span>SHADOW OPS</span>
+        </div>
+        <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-secondary);">© 2026 SHADOW OPS
+            INTELLIGENCE. ALL RIGHTS RESERVED. OPERATING IN SHADOWS.</p>
+        <div class="socials" style="display: flex; gap: 1rem;">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-discord"></i>
+        </div>
+    </footer>
+
+    <!-- Agent Modal -->
+    <div id="loginModal"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 2000; align-items: center; justify-content: center;">
+        <div class="contact-container" style="max-width: 400px;">
+            <h3 class="neon-text">AGENT AUTHENTICATION</h3>
+            <p style="margin-bottom: 2rem; font-size: 0.8rem;">Enter credentials to access Restricted Area.</p>
+            <div class="form-group">
+                <label>AGENT ID</label>
+                <input type="text" value="AGENT-001" readonly>
+            </div>
+            <div class="form-group">
+                <label>BIOMETRIC TOKEN</label>
+                <input type="password" value="********" readonly>
+            </div>
+            <div style="display: flex; gap: 1rem;">
+                <button class="btn" style="flex: 1"
+                    onclick="document.getElementById('loginModal').style.display='none'">CANCEL</button>
+                <button class="btn" style="flex: 1" id="authorizeBtn">AUTHORIZE</button>
+            </div>
+            <div class="terminal-loader">
+                > WAITING FOR INPUT...
+            </div>
+        </div>
+    </div>
+
+    <!-- Dossier Modal -->
+    <div id="dossierModal" class="dossier-modal">
+        <div class="dossier-content">
+            <div class="dossier-visual">
+                <div class="scan-line"></div>
+                <img src="" alt="Agent" class="dossier-img"
+                    style="width: 100%; border: 1px solid var(--border-color); filter: grayscale(1);">
+                <div class="dossier-stats-grid">
+                    <!-- JS Injected -->
+                </div>
+            </div>
+            <div class="dossier-bio">
+                <div class="dossier-header">
+                    <h2 class="dossier-name neon-text">AGENT CODE</h2>
+                    <p class="dossier-role" style="font-family: var(--font-mono); font-size: 0.9rem;"></p>
+                </div>
+                <h4>RECENT MISSIONS</h4>
+                <div class="dossier-missions" style="margin: 1.5rem 0;">
+                    <!-- JS Injected -->
+                </div>
+                <div class="btn" id="closeDossier" style="width: 100%;">RETURN TO PERSONNEL FILE</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- News Ticker -->
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <div class="ticker-item">// CLASSIFIED: OP RED SKY IN PROGRESS...</div>
+            <div class="ticker-item">// THREAT LEVEL: STABLE...</div>
+            <div class="ticker-item">// ASSET GHOST: STATUS ACTIVE...</div>
+            <div class="ticker-item">// ENCRYPTED UPLINK: SECURE...</div>
+            <div class="ticker-item">// NODE 04: BREACH DETECTED...</div>
+            <div class="ticker-item">// MONITORING GLOBAL FREQUENCIES...</div>
+        </div>
+    </div>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('loginBtn').addEventListener('click', (e) => {
+            e.preventDefault();
+            document.getElementById('loginModal').style.display = 'flex';
+        });
+        document.getElementById('loginModal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('loginModal')) {
+                document.getElementById('loginModal').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
